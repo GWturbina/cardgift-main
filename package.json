@@ -1,0 +1,48 @@
+{
+  "name": "cardgift-web3",
+  "version": "1.0.0",
+  "description": "Децентрализованная платформа поздравительных открыток на opBNB",
+  "main": "index.html",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network opbnbTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network opbnbMainnet",
+    "verify": "hardhat run scripts/verify.js",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "size": "hardhat size-contracts",
+    "coverage": "hardhat coverage"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "dotenv": "^16.3.0"
+  },
+  "dependencies": {
+    "ethers": "^6.8.0"
+  },
+  "keywords": [
+    "web3",
+    "opbnb",
+    "nft",
+    "greeting-cards",
+    "blockchain",
+    "safepal"
+  ],
+  "author": "CardGift Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cardgift/cardgift-web3.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

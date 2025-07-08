@@ -1,0 +1,226 @@
+# ===========================================
+# CARDGIFT WEB3 PROJECT .GITIGNORE
+# ===========================================
+
+# 🔐 КРИТИЧЕСКИ ВАЖНО - ПРИВАТНЫЕ КЛЮЧИ
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.backup
+.env.*.backup
+*.key
+*.pem
+private-keys/
+wallets/
+secrets/
+.secret
+
+# 📁 NODE.JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 🔧 BUILD ARTIFACTS
+dist/
+build/
+out/
+artifacts/
+cache/
+typechain-types/
+
+# 📊 HARDHAT
+coverage/
+coverage.json
+.nyc_output
+hardhat-gas-reporter.txt
+
+# 🧪 TESTING
+test-results/
+coverage/
+.nyc_output
+junit.xml
+
+# 📝 LOGS
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 🖥️ RUNTIME
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 📚 DOCUMENTATION BUILD
+docs/build/
+.docusaurus/
+
+# 💾 DATABASES
+*.db
+*.sqlite
+*.sqlite3
+
+# 🔄 TEMPORARY FILES
+tmp/
+temp/
+.tmp/
+.temp/
+
+# 📱 MOBILE
+*.mobileprovision
+*.p12
+
+# 🖼️ IMAGES (если большие)
+# Раскомментируйте если нужно игнорировать изображения
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.svg
+
+# 💻 MACOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 🐧 LINUX
+*~
+
+# 🪟 WINDOWS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# 📝 EDITORS
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 🌐 FRONTEND TOOLS
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+
+# 📦 PACKAGE MANAGERS
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# 🚀 DEPLOYMENT
+deployments/*.json
+!deployments/example.json
+deployed-contracts/
+deployment-logs/
+
+# 🧪 TESTING
+test-reports/
+.coverage/
+coverage-reports/
+
+# 📋 PROJECT SPECIFIC
+abis/
+contracts-deployed/
+contract-addresses.json
+gas-reports/
+
+# 🔄 TEMPORARY GENERATED FILES
+js/config.js
+js/contract-abi.js
+abi.json
+contract-config.json
+
+# 🎨 FRONTEND BUILD
+public/build/
+static/build/
+
+# 📱 MOBILE BUILDS
+platforms/
+plugins/
+www/
+
+# 🖥️ ELECTRON
+app/
+release/
+
+# 🌐 IPFS
+.ipfs/
+ipfs-uploads/
+
+# 🔐 ДОПОЛНИТЕЛЬНЫЕ ПРИВАТНЫЕ ФАЙЛЫ
+.secrets/
+.credentials/
+.keys/
+wallet.json
+keystore/
+.wallet
+
+# ===========================================
+# РАЗРЕШЕННЫЕ ФАЙЛЫ (ПРИНУДИТЕЛЬНО ВКЛЮЧИТЬ)
+# ===========================================
+
+# Конфигурационные примеры
+!.env.example
+!deployments/example.json
+!js/config.example.js
+
+# Документация
+!README.md
+!CONTRIBUTING.md
+!SECURITY.md
+!LICENSE
+
+# Важные конфиги
+!package.json
+!hardhat.config.js
+!truffle-config.js
+
+# ===========================================
+# ПРИМЕЧАНИЯ:
+# ===========================================
+# 
+# ⚠️  НИКОГДА НЕ КОММИТЬТЕ:
+# - Приватные ключи (.env)
+# - Кошельки и seed фразы
+# - API ключи
+# - Пароли
+# 
+# ✅ ВСЕГДА КОММИТЬТЕ:
+# - Примеры конфигураций (.example)
+# - Документацию
+# - Тесты
+# - Публичные конфиги
+#
+# ===========================================

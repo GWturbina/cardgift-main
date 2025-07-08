@@ -1,0 +1,9 @@
+{
+    "domain": "cardgift.bnb",
+    "ipfs_hash": "ВАШИ_ФАЙЛЫ_БУДУТ_ЗДЕСЬ",
+    "redirect_urls": {
+        "generator": "/generator.html",
+        "viewer": "/card-viewer.html", 
+        "dashboard": "https://gwturbina.github.io/cardgift-api/dashboard.html"
+    }
+}
